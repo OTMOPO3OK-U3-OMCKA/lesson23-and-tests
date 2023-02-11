@@ -10,13 +10,12 @@ from pathlib import Path
 
 def find(file_path, txt):
     with open(file_path) as f:
+
         file_content = f.read()
         lines = file_content.split('\n')
-        res = []
         for line in lines:
             if txt in line:
-                res.append(line)
-        return res
+                yield line
 
 
 if __name__ == "__main__":

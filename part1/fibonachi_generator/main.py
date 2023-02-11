@@ -5,8 +5,15 @@
 
 
 def fib(n):
-    # TODO напишите ваш код здесь
-    pass
+    n1 = 0
+    n2 = 1
+    while n > 0:
+        n -= 1
+        v = n1
+        n1 = n2
+        n2 = n1 + v
+        yield v
+
 
 
 fib_gen = fib(15)

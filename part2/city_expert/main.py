@@ -21,7 +21,7 @@ towns = [Town('Балашиха', 'МО'), Town('Химки', 'МО'), Town('Т�
 
 def get_names(towns):
     # TODO опишите логику функции здесь
-    pass
+    return [x.name for x in towns]
 
 
 if __name__ == "__main__":

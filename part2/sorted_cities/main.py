@@ -19,7 +19,7 @@ towns = [Town('Балашиха', 'МО'), Town('Химки', 'МО'), Town('Т�
  
 def sort_towns(towns):
     # TODO напишите функцию здесь
-    pass
+    return sorted([x.name for x in towns])
 
 
 if __name__ == "__main__":

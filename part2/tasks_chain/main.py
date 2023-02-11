@@ -20,7 +20,7 @@ towns = [Town(1, 'Балашиха', 'МО'), Town(2, 'Химки', 'МО'), Tow
  
 def get_ids(towns):
     # TODO напишите Ваш код здесь
-    pass
+    return list(map(lambda x: x.id, (sorted(filter(lambda x: x.region == "МО", towns), key=lambda x: x.name))))
 
 if __name__ == "__main__":
     print(get_ids(towns))
